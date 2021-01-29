@@ -30,3 +30,29 @@ const datas = {
 ### 4.从Gephi导入数据
 
 Network可以直接从gephi导出的json文件中导入数据。[示例](https://ame.cool/pages/f08230/#%E4%BB%8Egephi%E5%AF%BC%E5%85%A5%E6%95%B0%E6%8D%AE)
+
+## options配置项
+
+```js
+const options = {
+  autoResize: true,
+  height: '100%',
+  width: '100%'
+  locale: 'en',
+  locales: locales,
+  clickToUse: false,
+  configure: {...},    // 详细配置请查看'配置'模块，
+  edges: {...},        // 详细配置请查看'边'模块，
+  nodes: {...},        // 详细配置请查看'节点'模块，
+  groups: {...},       // 详细配置请查看'组'模块，
+  layout: {...},       // 详细配置请查看'布局'模块，
+  interaction: {...},  // 详细配置请查看'交互'模块，
+  manipulation: {...}, // 详细配置请'可视化操作'模块，
+  physics: {...},      // 详细配置请查看'物理引擎'模块，
+}
+```
+详细可参考官网可查的[文档](https://visjs.github.io/vis-network/docs/network/)、[中文文档](https://ame.cool/pages/222681/)，就是中文文档比较旧~
+
+### configure
+
+可配置一些vis-network自带的工具项，设置样式、模型等，并能够根据用户设置生成配置项，不过实际使用过程中用到的不多。略~
