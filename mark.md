@@ -56,3 +56,18 @@ npm install vis-network
         { from: 2, to: 5 },
         { from: 3, to: 3 },
       ]);
+      
+      // create a network
+      const container = document.getElementById("mynetwork");
+      const data = {
+        nodes: nodes,
+        edges: edges,
+      };
+      const options = {};
+      const network = new vis.Network(container, data, options);
+    </script>
+  </body>
+</html>
+```
+> 官网demo示例：https://visjs.github.io/vis-network/examples/network/basicUsage.html
+
