@@ -21,3 +21,12 @@ const datas = {
 ### 2.DataSet格式
 
 使用示例见前文demo。
+
+### 3.两者之间区别
+
+1、DataSet有**add**、**update**、**remove**、**clear**等方法，可在初始渲染后对数据进行单独增删改操作，可进行双击查询关联node等操作（[示例1](https://visjs.github.io/vis-network/examples/network/data/dynamicData.html)，[示例2](https://visjs.github.io/vis-network/examples/network/data/datasets.html)）；
+2、DataSet数据量较大时，存在一定耗时；
+
+### 4.从Gephi导入数据
+
+Network可以直接从gephi导出的json文件中导入数据。[示例](https://ame.cool/pages/f08230/#%E4%BB%8Egephi%E5%AF%BC%E5%85%A5%E6%95%B0%E6%8D%AE)
