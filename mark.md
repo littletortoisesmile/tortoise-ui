@@ -71,3 +71,16 @@ npm install vis-network
 ```
 > 官网demo示例：https://visjs.github.io/vis-network/examples/network/basicUsage.html
 
+
+从demo中可以看到，使用vis-network非常简单，只需要设置**container**、**data**、**options**三个参数就行。其中**container**为HTML DOM元素，不做介绍，重点介绍下**data**和**options**。
+
+## datas数据
+
+data参数主要设置nodes和edges两个数据项，且都支持数据和vis.DataSet两种类型。具体nodes和edges的配置同下文options.nodes和options.edges。
+
+```js
+interface Data {
+  nodes?: Node[] | DataInterfaceNodes;
+  edges?: Edge[] | DataInterfaceEdges;
+}
+```
